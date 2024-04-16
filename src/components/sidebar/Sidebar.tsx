@@ -11,11 +11,11 @@ import { AiFillHome, AiOutlineMail } from "react-icons/ai";
 import { MdContactMail, MdPlace } from "react-icons/md";
 
 const menuItems = [
-  {
-    path: "/dashboard",
-    title: "Inicio",
-    icon: <AiFillHome size={30} />,
-  },
+  // {
+  //   path: "/dashboard",
+  //   title: "Inicio",
+  //   icon: <AiFillHome size={30} />,
+  // },
   {
     path: "/dashboard/cv",
     title: "CV",
