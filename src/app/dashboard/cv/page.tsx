@@ -55,8 +55,8 @@ export default function CVPage() {
     <>
       <div className="flex flex-wrap  justify-around ">
         <div className="w-7/12 flex flex-col gap-4">
-          {CVList.map((item) => (
-            <ExperienceItem {...item} />
+          {CVList.map((item, i) => (
+            <ExperienceItem key={i} {...item} />
           ))}
         </div>
         <div className="w-4/12">
