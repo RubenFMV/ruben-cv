@@ -9,6 +9,7 @@ import { FaBriefcase, FaCode, FaFileAlt } from "react-icons/fa";
 import imagen from "../../../public/img/RubenMunoz.jpeg";
 import { AiFillHome, AiOutlineMail } from "react-icons/ai";
 import { MdContactMail, MdPlace } from "react-icons/md";
+import { CgCopyright } from "react-icons/cg";
 
 const menuItems = [
   // {
@@ -26,11 +27,7 @@ const menuItems = [
     title: "Portafolio",
     icon: <FaBriefcase size={30} />,
   },
-  {
-    path: "/dashboard/contacto",
-    title: "Contacto",
-    icon: <MdContactMail size={30} />,
-  },
+
   {
     path: "/dashboard/google",
     title: "¿Google Maps?",
@@ -77,8 +74,8 @@ export const Sidebar = () => {
 
         <div className="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
           <button className="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-            <CiLogout />
-            <span className="group-hover:text-gray-700">Logout</span>
+            <CgCopyright />
+            <span className="group-hover:text-gray-700">2024</span>
           </button>
         </div>
       </aside>

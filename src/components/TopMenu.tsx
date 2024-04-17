@@ -1,14 +1,25 @@
 import React from "react";
+import { BiLogoGmail, BiMailSend, BiPhone } from "react-icons/bi";
 import { CiMenuBurger, CiSearch, CiChat1, CiBellOn } from "react-icons/ci";
+import { MdEmail } from "react-icons/md";
 
 export const TopMenu = () => {
   return (
     <div>
       <div className="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
         <div className="px-6 flex items-center justify-between space-x-4">
-          <h5
-            hidden
-            className="text-2xl text-gray-600 font-medium lg:block"></h5>
+          <div hidden className=" text-gray-500 font-medium lg:block">
+            <div className="flex gap-5">
+              <div className="flex items-center gap-2">
+                <BiLogoGmail /> <span>rubenmunozf3@gmail.com |</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <BiPhone />
+                55 7912 4843
+              </div>
+            </div>
+          </div>
           <button className="w-12 h-16 -mr-2 border-r lg:hidden">
             <CiMenuBurger size={30} />
           </button>
