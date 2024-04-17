@@ -13,11 +13,6 @@ declare global {
   }
 }
 
-const mapStyles = {
-  height: "100vh",
-  width: "100%",
-};
-
 const lugaresVisitadors = [
   { lat: 19.363845550500574, lng: -99.07244538094683 },
   { lat: 19.44086457325696, lng: -99.20470010351339 },
@@ -52,16 +47,17 @@ export const MapsGrid = () => {
   };
   return (
     <>
-      <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_APY_KEY ?? " "}>
-        <div style={mapStyles}>
+      <div style={{ height: "100vh", width: "100%" }}>
+        <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_APY_KEY ?? " "}>
           <Map
             zoom={8}
             center={postion}
-            mapId={process.env.NEXT_PUBLIC_GOOGLE_APY_KEY}>
+            mapId={process.env.NEXT_PUBLIC_GOOGLE_APY_KEY}
+          >
             <Markers points={lugaresVisitadors}></Markers>
           </Map>
-        </div>
-      </APIProvider>
+        </APIProvider>
+      </div>
     </>
   );
 };
